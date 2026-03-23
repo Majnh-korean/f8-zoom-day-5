@@ -78,6 +78,17 @@ a:hover button {
 .menu li:first-child {
     border: none;
 }
+/* .menu li {
+    display: flex;
+}
+
+.menu li:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 84px;
+    background: #000;
+    display: inline-block;
+} */
 
 .menu a {
     color: #fff;

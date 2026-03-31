@@ -42,15 +42,16 @@ ul.exercise-menu li a {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 300px;
+  width: 250px;
   height: 400px;
   margin: 10px;
   font-weight: 600;
   font-size: 2.4rem;
   text-decoration: none;
-  color: #1a1a1a;
+  color: #000000;
   border-radius: 30px;
-  background-color: #fff;
+  background: #b2ffff;
+
   box-shadow: 9px 7px 28px -4px rgba(0, 0, 0, 0.86);
   -webkit-box-shadow: 9px 7px 28px -4px rgba(0, 0, 0, 0.86);
   -moz-box-shadow: 9px 7px 28px -4px rgba(0, 0, 0, 0.86);

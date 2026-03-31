@@ -1,207 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <form action="" class="form" autocomplete="off">
+      <h1>REGISTER</h1>
+      <div class="group-form">
+        <label for="displayName" class="required">Display Name</label>
+        <input
+          type="text"
+          name="displayName"
+          id="displayName"
+          placeholder="Display Name ..."
+          spellcheck="false"
+          required
         />
-        <title>REGISTER</title>
-        <link
-            rel="stylesheet"
-            href="./assets/css/reset.css"
+      </div>
+
+      <div class="group-form">
+        <label for="email" class="required">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email ..."
+          spellcheck="false"
+          required
         />
-        <link
-            rel="stylesheet"
-            href="./assets/css/style.css"
+      </div>
+
+      <div class="group-form">
+        <label for="phoneNumber" class="required">Phone Number</label>
+        <input
+          type="tel"
+          name="phoneNumber"
+          id="phoneNumber"
+          placeholder="Phone Number ..."
+          spellcheck="false"
+          pattern="[0-9]{10}"
+          required
         />
-    </head>
-    <body>
-        <form
-            action=""
-            class="form"
-            autocomplete="off"
-        >
-            <h1>REGISTER</h1>
-            <div class="group-form">
-                <label
-                    for="displayName"
-                    class="required"
-                    >Display Name</label
-                >
-                <input
-                    type="text"
-                    name="displayName"
-                    id="displayName"
-                    placeholder="Display Name ..."
-                    spellcheck="false"
-                    required
-                />
-            </div>
+      </div>
 
-            <div class="group-form">
-                <label
-                    for="email"
-                    class="required"
-                    >Email</label
-                >
-                <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="email ..."
-                    spellcheck="false"
-                    required
-                />
-            </div>
+      <div class="group-form">
+        <label for="password" class="required">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password ..."
+          minlength="6"
+          required
+        />
+      </div>
 
-            <div class="group-form">
-                <label
-                    for="phoneNumber"
-                    class="required"
-                    >Phone Number</label
-                >
-                <input
-                    type="tel"
-                    name="phoneNumber"
-                    id="phoneNumber"
-                    placeholder="Phone Number ..."
-                    spellcheck="false"
-                    pattern="[0-9]{10}"
-                    required
-                />
-            </div>
+      <div class="group-form">
+        <label for="confirmPassword" class="required">Confirm Password</label>
+        <input
+          type="password"
+          name="confirmPassword"
+          id="confirmPassword"
+          placeholder="Confirm Password ..."
+          minlength="6"
+          required
+        />
+      </div>
 
-            <div class="group-form">
-                <label
-                    for="password"
-                    class="required"
-                    >Password</label
-                >
-                <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="Password ..."
-                    minlength="6"
-                    required
-                />
-            </div>
+      <div class="group-form">
+        <label class="required">Gender</label>
+        <label>
+          <input type="radio" name="gender" id="male" required />
+          male
+        </label>
+        <label>
+          <input type="radio" name="gender" id="female" required />
+          female
+        </label>
+        <label>
+          <input type="radio" name="gender" id="other" required />
+          other
+        </label>
+      </div>
 
-            <div class="group-form">
-                <label
-                    for="confirmPassword"
-                    class="required"
-                    >Confirm Password</label
-                >
-                <input
-                    type="password"
-                    name="confirmPassword"
-                    id="confirmPassword"
-                    placeholder="Confirm Password ..."
-                    minlength="6"
-                    required
-                />
-            </div>
+      <div class="group-form">
+        <label for="dateOfBirth">Date of Birth</label>
+        <input
+          type="date"
+          name="dateOfBirth"
+          id="dateOfBirth"
+          placeholder="Date of Birth ..."
+        />
+      </div>
 
-            <div class="group-form">
-                <label class="required">Gender</label>
-                <label>
-                    <input
-                        type="radio"
-                        name="gender"
-                        id="male"
-                        required
-                    />
-                    male
-                </label>
-                <label>
-                    <input
-                        type="radio"
-                        name="gender"
-                        id="female"
-                        required
-                    />
-                    female
-                </label>
-                <label>
-                    <input
-                        type="radio"
-                        name="gender"
-                        id="other"
-                        required
-                    />
-                    other
-                </label>
-            </div>
+      <div class="group-form">
+        <label for="address">Address</label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          placeholder="address ..."
+          spellcheck="false"
+        />
+      </div>
 
-            <div class="group-form">
-                <label for="dateOfBirth">Date of Birth</label>
-                <input
-                    type="date"
-                    name="dateOfBirth"
-                    id="dateOfBirth"
-                    placeholder="Date of Birth ..."
-                />
-            </div>
+      <div class="group-form">
+        <label for="profilePicture">Profile Picture</label>
+        <label for="profilePicture">
+          <img class="img-form" src="./assets/img/avt.png" alt="avatar" />
+        </label>
 
-            <div class="group-form">
-                <label for="address">Address</label>
-                <input
-                    type="text"
-                    name="address"
-                    id="address"
-                    placeholder="address ..."
-                    spellcheck="false"
-                />
-            </div>
+        <input
+          type="file"
+          name="profilePicture"
+          id="profilePicture"
+          accept="image/*"
+          hidden
+        />
+      </div>
 
-            <div class="group-form">
-                <label for="profilePicture">Profile Picture</label>
-                <label for="profilePicture">
-                    <img
-                        src="./assets/img/avt.png"
-                        alt="avatar"
-                    />
-                </label>
+      <div class="group-form">
+        <label>Communication Preferences </label>
+        <label>
+          <input type="checkbox" id="male" />
+          Subscribe to Newsletter
+        </label>
+        <label>
+          <input type="checkbox" id="female" />
+          Receive Promotional Emails
+        </label>
+        <label>
+          <input type="checkbox" id="other" />
+          Get Product Updates
+        </label>
+      </div>
 
-                <input
-                    type="file"
-                    name="profilePicture"
-                    id="profilePicture"
-                    accept="image/*"
-                    hidden
-                />
-            </div>
-
-            <div class="group-form">
-                <label>Communication Preferences </label>
-                <label>
-                    <input
-                        type="checkbox"
-                        id="male"
-                    />
-                    Subscribe to Newsletter
-                </label>
-                <label>
-                    <input
-                        type="checkbox"
-                        id="female"
-                    />
-                    Receive Promotional Emails
-                </label>
-                <label>
-                    <input
-                        type="checkbox"
-                        id="other"
-                    />
-                    Get Product Updates
-                </label>
-            </div>
-
-            <div class="btn">
-                <button>REGISTER</button>
-            </div>
-        </form>
-    </body>
+      <div class="btn">
+        <button>REGISTER</button>
+      </div>
+    </form>
+  </body>
 </html>
